@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+     *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            background-image: url("woman.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+            height: 100px;
+        }
+
+        header {
+            width: 100%;
+            height: 85px;
+            background-color: rgba(90, 253, 204, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* text-decoration: none; */
+            padding: 5px;
+           
+        }
+
+        .logo {
+            /* font-family: 'Courier New', Courier, monospace; */
+            /* color: aliceblue; */
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 7px 5px;
+            /* padding-top: 3px; */
+            color: rgb(255, 255, 255);
+            margin-top: 15px;
+        }
+
+        .logo img,
+        .logo img,
+        p {
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 0.55px;
+            /* padding-left: 19px; */
+            /* margin-left: 21px;
+            margin-bottom: 5px;
+            margin-top: 5px; */
+            /* text-align: justify; */
+        }
+
+        .logo :hover {
+            color: blue;
+
+        }
+
+        nav li {
+            display: inline-block;
+            /* margin-lift: 10px; */
+            padding: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(12, 11, 11);
+            border: 30px hidden blanchedalmond;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        button {
+            background-color: rgb(240, 223, 202);
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            border: 2px solid rgba(80, 198, 245, 0.5);
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            color: blue;
+            background-color: blanchedalmond;
+        }
+
+    /* .login-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 40px;
+        width: 400px;
+        transform: translate(-50%,-50%);
+        background: rgba(0,0,0,0.5);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+        box-sizing: border-box;
+        border-radius:10px ;
+       
+    }
+    .login-box h2{
+        margin: 0px 0px 30px;
+        color: #fff ;
+        padding: 0px;
+        text-align: center;
+    }
+    .login-box .user-box {
+       position: relative;
+    }
+    .login-box .user-box input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background:transparent;
+        
+        color: #FFF;
+    }
+    .login-box .user-box label{
+        position: absolute;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+       
+        left: 0%;
+        top: 0%;
+        pointer-events: none;
+    }
+    .login-box .user-box input:focus ~ label,
+    .login-box .user-box input:valid ~ label{
+        top:-20px;
+        left: 0%;
+        color: aqua;
+        font-size: 12PX;
+    }
+      
+    .login-box Form a{
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: aqua;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+       
+        margin: 40px;
+        letter-spacing: 4px;}
+        .login-box a:hover{
+            background: aqua;
+            color: #c51b1b;
+            border-radius: 13px;
+            box-shadow: 0 0 5px #03e9f4;
+        }
+        .login-box a span{
+            position: absolute;
+            display: block;
+        } */
+        
+        .container {
+            color: rgb(255, 255, 255);
+            margin: 80px 80px;
+           
+            width: 400px;
+            /* max-width: 90%; */
+            height: 500px;
+            /* position:fixed; */
+            z-index: 100;
+         backdrop-filter: blur(5px);
+        }
+
+        
+        .container form {
+          
+            width: 100%;
+            height: 400px;
+            padding: 20px; 
+        /* color: aliceblue; */
+        /* background: transparent; */
+        /* background-color: rgb(20, 19, 19); */
+         border: 0.1px solid white;
+            border-radius: 6px;
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+            
+        }
+
+        .container form h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: rgb(226, 226, 226);
+            font-family: Bookman Old Style;
+        }
+
+        .name {
+            margin-top: 50px;
+            margin-left: 10px;
+            padding: 10px;
+            font-weight: 300;
+            font-family: Bookman Old Style;
+        }
+
+        .name,
+        .password label {
+            font-size: 20px;
+        }
+
+        .name input {
+            width: 330px;
+            height: 25px;
+            border: 0cap;
+            border-radius: 3px;
+            font-family: Bookman Old Style;
+            background-color: rgba(44, 43, 43, 0.363);
+        }
+
+        .password input {
+            width: 330px;
+            height: 25px;
+            border: 0cap;
+            border-radius: 3px;
+            font-family: Bookman Old Style;
+            background-color: rgba(44, 43, 43, 0.363);
+        } 
+
+         .password {
+
+            margin-left: 10px;
+            padding: 10px;
+            font-weight: 300;
+            font-family: Bookman Old Style;
+        }
+
+        .login {
+            width: 320px;
+            height: 30px;
+            font-size: 21px;
+            text-transform: capitalize;
+            font-family: Bookman Old Style;
+            border: 0cap;
+            border-radius: 3px;
+            color: rgb(0, 0, 0);
+            margin-top: 18px;
+            margin-left: 22px;
+            font-weight: 700;cursor: pointer;
+            /* transition: transform .6s; */
+        } 
+        /* .login:hover{
+            transform: scale(.1);
+        } */
+       .google {
+            width: 163px;
+            height: 30px;
+            font-size: 18px;
+            margin-top: 28px;
+            color: rgb(0, 0, 0); 
+             background-color: rgba(123, 185, 236, 0.616);
+            text-transform: capitalize;
+            font-weight: 700;
+            font-family: Bookman Old Style;
+            border: 0px;
+            border-radius: 6px;
+            /* background-color: rgba(44, 43, 43, 0.363); */
+            transition: transform .6s;cursor: pointer;
+        } 
+        .google:hover{
+            transform: scale(1.1);
+        }
+         .facebook {
+            width: 163px;
+            color: rgb(0, 0, 0); 
+             background-color: rgba(123, 185, 236, 0.616);
+            height: 30px;
+            font-size: 18px;
+            margin-top: 18px;
+            margin-left: 10px;
+            text-transform: capitalize;
+            font-family: Bookman Old Style;
+            font-weight: 700;
+          
+            border: 0px;
+            border-radius: 6px;
+            transition: transform .6s;cursor: pointer;
+        } 
+        .facebook:hover{
+            transform: scale(1.1);
+        }
+        footer{
+            background-color: rgb(96, 181, 192);
+           /* height: 50px; */
+           margin-top: 20px;
+           
+
+        }
+        footer .copy{
+           margin-left: 500px;
+           font-size: 19px;
+           font-weight: 700;
+        }
+        
+footer div a{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: blue;
+    margin-left: 250px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.webp" width="60px" height="60px">
+            <p><a href="log in.html">Log in Profile</a></p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="constant.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button><a href="appoietment.html">Appointment</a></button>
+    </header>
+      <!-- <div class="login-box">
+        <h2>Login</h2>
+        <form >
+            <div class="user-box">
+           <input type="TEXT"NAME="" required="required">
+           <LABEL>Username</LABEL>
+        </div>
+           <div class="user-box">
+           <input type="password"NAME="" required="required">
+           <label >password</label>
+ </div>
+ <p>Forgotten your login details?Get help with logging in.</p>
+ <a href="#">Get help with logging in.</a> 
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           Log in
+          </a>
+        </form>
+     </div> -->
+     <div class="container">
+        <div class="circle1">
+        <form action="">
+            <h1>Login Here</h1>
+            <div class="name">
+                <label for="username">Username</label><br>
+                <input type="text" placeholder="username" required>
+            </div>
+            <div class="password">
+                <label for="password">Password</label><br>
+                <input type="text" placeholder="password" required>
+            </div>
+            <input type="button" class="login" value="login"><br>
+            <input type="button" class="google" value="google">
+            <input type="button" class="facebook" value="facebook">
+        </form>
+        </div>
+    </div>
+    <footer>
+        <p class="copy">@copyright by my hospital</p> <br> 
+       <div> <a href="#">contact</a>
+        <a href="#">form fill</a>
+        <a href="#">service</a></div>
+    </footer>
+</body>
+</html>

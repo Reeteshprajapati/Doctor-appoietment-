@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            background-image: url("woman.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-position: center; */
+            height: 100px;
+        }
+
+        header {
+            width: 100%;
+            height: 85px;
+            background-color: rgba(90, 253, 204, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* text-decoration: none; */
+            padding: 5px;
+        }
+
+        .logo {
+            /* font-family: 'Courier New', Courier, monospace; */
+            /* color: aliceblue; */
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 7px 5px;
+            /* padding-top: 3px; */
+            color: rgb(255, 255, 255);
+            margin-top: 15px;
+        }
+
+        .logo img,
+        .logo img,
+        p {
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 0.55px;
+            /* padding-left: 19px; */
+            /* margin-left: 21px;
+            margin-bottom: 5px;
+            margin-top: 5px; */
+            /* text-align: justify; */
+        }
+
+        .logo :hover {
+            color: blue;
+
+        }
+
+        nav li {
+            display: inline-block;
+            /* margin-lift: 10px; */
+            padding: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            border: 30px hidden blanchedalmond;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        button {
+            background-color: rgba(238, 199, 148, 0.4);
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            border: 2px solid rgba(245, 124, 80, 0.5);
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            color: blue;
+            background-color: blanchedalmond;
+        }
+        /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(doctor.jpg);
+        } */
+
+        .appointment {
+            text-align: center;
+            position: relative;
+            height: 400px;
+            width: 380px;
+            border: 2px solid rgb(243, 235, 236);
+            border-radius: 23px;
+            align-items: center;
+            /* display: flex; */
+            /* padding-top: 100px; */
+            /* text-decoration: underline; */
+            justify-content: center;
+            padding: 20px;
+            margin-top: 30px;
+            margin-left: 20px;
+            box-shadow: 1px 2px 9px 3px rgb(74, 164, 248);
+        }
+
+        .name {
+            text-transform: capitalize;
+            /* padding: 10px; */
+            font-size: 21px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-top: 60px;
+
+        }
+
+        .content {
+            text-transform: capitalize;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            /* padding: 50px; */
+            font-size: 21px;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-top: 10px;
+        }
+
+        .dob {
+            text-transform: capitalize;
+            /* padding: 50px; */
+            font-size: 21px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .year {
+            text-transform: capitalize;
+            /* padding: 50px; */
+            font-size: 21px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-top: 10px;
+        }
+
+        .date {
+            text-transform: capitalize;
+            /* padding: 50px; */
+            font-size: 21px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-top: 10px;
+        }
+
+        button {
+            border: 3px solid black;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: 900;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 50px;
+            color: rgb(54, 52, 52);
+            background-color: rgba(43, 253, 183, 0.5);
+            /* display: inline-block; */
+        }
+
+        button:hover {
+            color: blue;
+            background-color: rgb(106, 232, 248);
+            cursor: pointer;
+        }
+.name input{
+    margin-left: 10px;
+}
+.date label{
+    margin-right: 15px;
+}
+.year input{
+    margin-left: 15px;
+}
+ .appointment input,label{
+    border-radius: 10px;
+    font-family: 'Courier New';
+    font-weight: 600;
+}
+footer{
+            background-color: rgb(96, 181, 192);
+           height: 50px;
+           margin-top: 20px;
+           
+
+        }
+        footer .copy{
+           margin-left: 500px;
+           font-size: 19px;
+           font-weight: 700;
+        }
+        
+footer div a{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: blue;
+    margin-left: 250px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.webp" width="60px" height="60px">
+            <p><a href="log in.html">Log in Profile</a></p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="constant.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button><a href="appoietment.html">Appointment</a></button>
+    </header>
+
+    <div class="appointment">
+        <h1>Appointment form</h1>
+        <div class="name">
+            <label> name</label>
+            <input type="text" required>
+        </div>
+        <div class="date">
+            <label> Date</label>
+            <input type="datetime-local" required>
+        </div>
+        <div class="content">
+            <label>Contact</label>
+            <input type="number" length max="10" required>
+        </div>
+        <div class="dob">
+            <label>D.O.B</label>
+            <input type="datetime-local" required>
+        </div>
+
+        <div class="year">
+            <label>Year</label>
+            <input type="number text" required>
+        </div>
+        <button a href="#">Confirm Appointment</button>
+    </div>
+    <!-- <P>Thank you Dear costomer</P> -->
+    <footer>
+        <p class="copy">@copyright by my hospital</p> <br> 
+       <div> <a href="#">contact</a>
+        <a href="#">form fill</a>
+        <a href="#">service</a></div>
+    </footer>
+</body>
+
+</html>

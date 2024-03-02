@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            /* background-image: url("ui.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 110px; */
+            background-color: rgb(97, 209, 181);
+        }
+
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: rgba(90, 253, 204, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* text-decoration: none; */
+            padding: 5px;
+        }
+
+        .logo {
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 7px 5px;
+
+            color: rgb(255, 255, 255);
+            margin-top: 15px;
+        }
+
+        .logo img,
+        .logo img,
+        p {
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 0.55px;
+        }
+
+        .logo :hover {
+            color: blue;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(0, 0, 0);
+            border: 30px hidden blanchedalmond;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+
+        }
+
+        .app {
+            background-color: rgb(238, 212, 179);
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            border: 2px solid rgba(245, 124, 80, 0.5);
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .app :hover {
+            color: blue;
+            background-color: blanchedalmond;
+        }
+h1{
+    text-decoration: underline 2px  ;
+}
+        .container {
+            /* background-color: aquamarine; */
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 20px;
+            position: relative;
+
+        }
+
+        /* .cardone {
+            margin-left: 100px;
+            display: inline-block;
+            box-shadow: 1px 1px 6px  rgb(0, 0, 0);
+            text-transform: capitalize;
+            font-family: 'Courier New';
+            cursor: pointer;
+            width: 350px;
+            height: 400px;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .cardone h3 {
+            font-size: 28px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: rgb(20, 163, 173);
+            text-transform: uppercase;
+
+        }
+
+        .cardone img {
+            width: 300px;
+            height: 150px;
+            margin-top: 80px;
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px black ;
+        }
+        .cardtwo {
+            margin-left: 100px;
+           
+            box-shadow: 1px 1px 6px  rgb(0, 0, 0);
+            text-transform: capitalize;
+            font-family: 'Courier New';
+            cursor: pointer;
+            width: 350px;
+            height: 400px;
+           
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .cardtwo h3 {
+            font-size: 28px;
+            position: absolute;
+            top: 20px;
+            left: 580px;
+            color: rgb(20, 163, 173);
+            text-transform: uppercase;
+
+        }
+
+        .cardtwo img {
+            width: 300px;
+            height: 150px;
+            margin-top: 80px;
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px black ;
+        } */
+        .a {
+            width: 600px;
+            background-color: transparent;
+            box-shadow: 1px 1px 6px 1px;
+            position: absolute;
+            right: 50px;
+            top: 260px;
+            font-weight: 900;
+            border-radius: 20px;
+            padding: 6px;
+            
+           
+        }
+        .a p{
+             justify-content: center;
+        }
+        .b {
+            width: 600px;
+            height: 340px;
+            margin-top: 90px;
+            margin-left: 50px;
+            background-color: aquamarine;
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px black;
+        }
+
+        .b img {
+            width: 600px;
+            height: 340px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #btn{
+            border-radius: 10px;
+            padding: 3px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        footer{
+            background-color: rgb(153, 206, 190);
+           height: 60px;
+           margin-top: 20px;
+           
+
+        }
+        footer .copy{
+           margin-left: 500px;
+           font-size: 19px;
+           font-weight: 700;
+        }
+        
+footer div a{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: blue;
+    margin-left: 250px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.webp" width="60px" height="60px">
+            <p><a href="log in.html">Log in Profile</a></p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="constant.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="app"><a href="appoietment.html">Appointment</a></button>
+    </header>
+
+    <h1>ABOUT US</h1>
+    <!-- <div class="container">
+
+        <div class="cardone">
+
+            <h3>Critical condition</h3>
+            <img src="wall5.webp" alt="image">
+            <div class="paragraph">
+                <p class="pra1">
+                    <button class="read">click</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="cardtwo">
+
+            <h3>Critical condition</h3>
+            <img src="wall5.webp" alt="image">
+            <div class="paragraph">
+                <p class="pra1">
+                    <button class="read">click</button>
+                </p>
+            </div>
+        </div>
+
+    </div> -->
+    <div class="a">
+        <p>MY HOSPITAL has established itself as a premier provider of high quality, professional care in a
+            state-of-the-art medical facility for over two decades. Healthcare is an intensely personal service.
+            Underlying all that we offer is the recognition that healthcare is not a commodity. Our essential purpose is
+            to improve the human condition. Our reason for being begins and ends with our patients. Our motto is HEALTH
+            , HUMANITY & HAPPINESS for masses.To our patients we owe comfort, compassion and whenever possible, cure.
+            Our efforts are focused not just on the individual but also on the overall health of the community.
+            Providing access to high quality, cost-effective health services through an integrated delivery system It is
+            our obligation to provide responsible stewardship of our resources, acting in all areas of our healthcare
+            system with integrity, professionalism and with respect for a patient’s right to choice.Hospital is Income
+            Tax exempted under section (ii) (b) to subsection (2) to section 17 of Income Tax Act 1961.MY HOSPITAL  was founded
+            in the year 1995 and is the vision of Dr. Brij Mohan who have been devoted to the practice of integral
+            medicine for over 30 years. It is with these values and this cultural ethos in mind that we have begun the
+            journey of integrating & consolidating our services to be the ideal blend of technology & care. From the
+            time of its inception in 1995 ....<button id="btn">more</button></p>
+            
+    </div>
+
+    <div class="b">
+        <img src="wall5.webp" alt="">
+    </div>
+
+    <footer>
+        <p class="copy">@copyright by my hospital</p> <br> 
+       <div> <a href="#">contact</a>
+        <a href="#">form fill</a>
+        <a href="#">service</a></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appoiment</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            background-image: url("woman.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+            
+        }
+
+        header {
+            width: 100%;
+            height: 85px;
+            background-color: rgba(90, 253, 204, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* text-decoration: none; */
+            padding: 5px;
+        }
+
+        .logo {
+            /* font-family: 'Courier New', Courier, monospace; */
+            /* color: aliceblue; */
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 7px 5px;
+            /* padding-top: 3px; */
+            color: rgb(255, 255, 255);
+            margin-top: 15px;
+        }
+
+        .logo img,
+        .logo img,
+        p {
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 0.55px;
+            /* padding-left: 19px; */
+            /* margin-left: 21px;
+            margin-bottom: 5px;
+            margin-top: 5px; */
+            /* text-align: justify; */
+        }
+
+        .logo :hover {
+            color: blue;
+
+        }
+
+        nav li {
+            display: inline-block;
+            /* margin-lift: 10px; */
+            padding: 50px;
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(0, 0, 0);
+            border: 30px hidden blanchedalmond;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        button {
+            background-color: rgb(247, 224, 195);
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            border: 2px solid rgba(245, 124, 80, 0.5);
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            color: blue;
+            background-color: blanchedalmond;
+        }
+
+        .discount {
+            font-weight: 900;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .info {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .b {
+            font-size: 20px;
+            font-family: 'Courier New', Courier;
+            font-weight: 900;
+        }
+
+        .b h3 {
+            /* text-align: center; */
+            /* border: 2px solid rgb(245, 195, 104); */
+            border-radius: 5px;
+            background-color: rgb(249, 250, 215);
+            color: rgb(0, 0, 0);
+            display: inline;
+
+        }
+
+        .b p {
+            margin-right: 40px
+        }
+
+        .b li:hover {
+            background-color: aquamarine;
+            display: inline;
+        }
+        .title{
+            margin: 200px;
+            font-size: 30px;
+            font-family: 'Courier New';
+            /* margin-bottom: 50px; */
+        }
+        .title h1{
+            text-transform: uppercase;
+        }
+        .title img{
+            height:90px;
+            width: 200px;
+            mix-blend-mode: color-burn;
+            cursor: pointer;position: absolute;
+        }
+        /* footer {
+            background-color: rgba(71, 231, 231,0.2);
+            height: 60px;
+           
+        }
+        footer p{
+            margin-left: 700px;
+        } */
+        footer{
+            background-color: rgb(96, 181, 192);
+           /* height: 20px; */
+           margin-top: 20px;
+           
+
+        }
+        footer .copy{
+           margin-left: 500px;
+           font-size: 19px;
+           font-weight: 700;
+        }
+        
+footer div a{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: blue;
+    margin-left: 250px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.webp" width="60px" height="60px">
+            <p><a href="log in.html">Log in Profile</a></p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="constant.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button><a href="appoietment.html">Appointment</a></button>
+    </header>
+    <marquee class="discount" direction="right" >Get 10% discount on all appointments* booked and paid online.</marquee>
+    <!-- <div class="info"> You can book an appointment for Aadhaar Card Enrolment online. </div>
+    <hr> -->
+    <!-- <div class="img2">
+    <img src="woman.jpg">
+</div> -->
+<div class="title">
+    <h1>welcome</h1>
+    <p>Stay safe </p><br>
+    <img src="ui.webp" >
+</div>
+<!-- <footer>
+  <p> &copy;  2024</p>
+</footer> -->
+<footer>
+    <p class="copy">@copyright by my hospital</p> <br> 
+   <div> <a href="#">contact</a>
+    <a href="#">form fill</a>
+    <a href="#">service</a></div>
+</footer>
+</body>
+
+</html>
